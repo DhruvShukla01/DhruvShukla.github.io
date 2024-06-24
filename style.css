@@ -309,3 +309,38 @@ section{
     width: 400px;
     margin: auto 0;
 }
+
+/* WIP Gif */
+/* Add this to your style.css */
+
+#wip-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#giphy-embed {
+    height: 100%;
+    width: 100%;
+}
+
+/* Optional: Add some transition for smooth appearance */
+#wip-message {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Adjust the top margin of the body to avoid overlap with the message */
+body {
+    margin-top: 50px; /* Adjust this value if needed */
+}
