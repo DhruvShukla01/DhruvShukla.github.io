@@ -313,34 +313,34 @@ section{
 /* WIP Gif */
 /* Add this to your style.css */
 
+/* Adjust the gif container to properly size the gif */
+.gif-container {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    position: relative;
+    margin-right: 10px; /* Adjust the margin if necessary */
+}
+
+iframe {
+    width: 100%; /* Ensure the iframe fills the container */
+    height: 100%; /* Ensure the iframe fills the container */
+    position: absolute;
+    border: none; /* Remove border for aesthetics */
+}
+
 #wip-message {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    font-weight: 600;
+    justify-content: center; /* Center content for better alignment */
+    background-color: rgba(255, 255, 255, 0.9);
     color: black;
     text-align: center;
     padding: 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it stays on top */
+    z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#giphy-embed {
-    height: 100%;
-    width: 100%;
-}
-
-/* Optional: Add some transition for smooth appearance */
-#wip-message {
     transition: all 0.3s ease-in-out;
-}
-
-/* Adjust the top margin of the body to avoid overlap with the message */
-body {
-    margin-top: 50px; /* Adjust this value if needed */
 }

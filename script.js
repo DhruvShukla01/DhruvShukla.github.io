@@ -10,19 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const iframe = document.createElement('iframe');
     iframe.src = 'https://giphy.com/embed/JomVilU47wifhL9FSQ';
-    iframe.width = '100%';
-    iframe.height = '100%';
     iframe.style.position = 'absolute';
     iframe.frameBorder = '0';
     iframe.classList.add('giphy-embed');
     iframe.allowFullscreen = true;
 
     const gifContainer = document.createElement('div');
-    gifContainer.style.width = '50px'; // Adjust size as needed
-    gifContainer.style.height = '50px'; // Adjust size as needed
+    gifContainer.style.width = '40px';
+    gifContainer.style.height = '40px'; 
     gifContainer.style.position = 'relative';
     gifContainer.style.paddingBottom = '0';
-    gifContainer.style.marginRight = '10px';
+    gifContainer.style.marginRight = '30px';
 
     gifContainer.appendChild(iframe);
 
